@@ -1,57 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>VR Art Gallery</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
-  </head>
-  <body>
-    <a-scene>
-      <!-- Lighting -->
-      <a-light type="ambient" color="#ffffff"></a-light>
-      <a-light type="point" position="0 5 0" intensity="1"></a-light>
 
-      <!-- Floor -->
-      <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="20" color="#7BC8A4"></a-plane>
+<head>
+  <meta charset="utf-8" />
+  <title>VR Art Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+</head>
 
-      <!-- Walls -->
-      <a-box position="0 2.5 -10" width="20" height="5" depth="0.5" color="#ccc"></a-box>
-      <a-box position="-10 2.5 0" rotation="0 90 0" width="20" height="5" depth="0.5" color="#ccc"></a-box>
-      <a-box position="10 2.5 0" rotation="0 90 0" width="20" height="5" depth="0.5" color="#ccc"></a-box>
+<body>
+  <a-scene>
+    <!-- Lighting -->
+    <a-light type="ambient" color="#ffffff"></a-light>
+    <a-light type="point" position="0 5 0" intensity="1"></a-light>
 
-      <!-- Art Frames -->
-      <a-plane
-        position="-4 2.5 -9.5"
-        rotation="0 0 0"
-        width="3"
-        height="3"
-        src="art1.jpg"
-        class="art-piece"
-      ></a-plane>
-      <a-plane
-        position="0 2.5 -9.5"
-        rotation="0 0 0"
-        width="3"
-        height="3"
-        src="art2.jpg"
-        class="art-piece"
-      ></a-plane>
-      <a-plane
-        position="4 2.5 -9.5"
-        rotation="0 0 0"
-        width="3"
-        height="3"
-        src="art3.jpg"
-        class="art-piece"
-      ></a-plane>
+    <!-- Floor -->
+    <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="20" color="#7BC8A4"></a-plane>
 
-      <!-- Camera and Controls -->
-      <a-entity position="0 1.6 4">
-        <a-camera>
-          <a-cursor color="#FF0000"></a-cursor>
-        </a-camera>
-      </a-entity>
-    </a-scene>
-  </body>
+    <!-- Walls -->
+    <a-box position="0 2.5 -10" width="20" height="5" depth="0.5" color="#ccc"></a-box>
+    <a-box position="-10 2.5 0" rotation="0 90 0" width="100" height="100" depth="0.5" color="#ccc"></a-box>
+    <a-box position="10 2.5 0" rotation="0 90 0" width="100" height="100" depth="0.5" color="#ccc"></a-box>
+
+    <!-- Art Frames -->
+    <a-plane position="0 2.5 -9.5" rotation="0 0 0" width="3" height="3" src="001.jpeg" class="art-piece"></a-plane>
+    <a-plane position="5 2.5 -9.5" rotation="0 0 0" width="3" height="3" src="002.jpeg" class="art-piece"></a-plane>
+    <a-plane position="10 2.5 -9.5" rotation="0 0 0" width="3" height="3" src="003.jpeg" class="art-piece"></a-plane>
+    <a-plane position="15 2.5 -9.5" rotation="0 0 0" width="3" height="3" src="004.jpeg" class="art-piece"></a-plane>
+    <a-plane position="20 2.5 -9.5" rotation="0 0 0" width="3" height="3" src="005.jpeg" class="art-piece"></a-plane>
+    <a-plane position="25 2.5 -9.5" rotation="0 0 0" width="3" height="3" src="006.jpeg" class="art-piece"></a-plane>
+    <a-plane position="30 2.5 -9.5" rotation="0 0 0" width="3" height="3" src="007.jpeg" class="art-piece"></a-plane>
+    <a-plane position="35 2.5 -9.5" rotation="0 0 0" width="3" height="3" src="008.jpeg" class="art-piece"></a-plane>
+    <a-plane position="40 2.5 -9.5" rotation="0 0 0" width="3" height="3" src="009.jpeg" class="art-piece"></a-plane>
+    <a-plane position="45 2.5 -9.5" rotation="0 0 0" width="3" height="3" src="010.jpeg" class="art-piece"></a-plane>
+
+    <a-plane position="0 7.5 -9.5" rotation="0 0 0" width="3" height="3" src="011.jpeg" class="art-piece"></a-plane>
+    <a-plane position="5 7.5 -9.5" rotation="0 0 0" width="3" height="3" src="012.jpeg" class="art-piece"></a-plane>
+    <a-plane position="10 7.5 -9.5" rotation="0 0 0" width="3" height="3" src="013.jpeg" class="art-piece"></a-plane>
+    <a-plane position="15 7.5 -9.5" rotation="0 0 0" width="3" height="3" src="014.jpeg" class="art-piece"></a-plane>
+    <a-plane position="20 7.5 -9.5" rotation="0 0 0" width="3" height="3" src="015.jpeg" class="art-piece"></a-plane>
+    <a-plane position="25 7.5 -9.5" rotation="0 0 0" width="3" height="3" src="016.jpeg" class="art-piece"></a-plane>
+    <a-plane position="30 7.5 -9.5" rotation="0 0 0" width="3" height="3" src="017.jpeg" class="art-piece"></a-plane>
+    <a-plane position="35 7.5 -9.5" rotation="0 0 0" width="3" height="3" src="018.jpeg" class="art-piece"></a-plane>
+    <a-plane position="40 7.5 -9.5" rotation="0 0 0" width="3" height="3" src="019.jpeg" class="art-piece"></a-plane>
+    <a-plane position="45 7.5 -9.5" rotation="0 0 0" width="3" height="3" src="020.jpeg" class="art-piece"></a-plane>
+
+    <a-plane position="0 12.5 -9.5" rotation="0 0 0" width="3" height="3" src="021.jpeg" class="art-piece"></a-plane>
+    <a-plane position="5 12.5 -9.5" rotation="0 0 0" width="3" height="3" src="022.jpeg" class="art-piece"></a-plane>
+    <a-plane position="10 12.5 -9.5" rotation="0 0 0" width="3" height="3" src="023.jpeg" class="art-piece"></a-plane>
+    <a-plane position="15 12.5 -9.5" rotation="0 0 0" width="3" height="3" src="024.jpeg" class="art-piece"></a-plane>
+    <a-plane position="20 12.5 -9.5" rotation="0 0 0" width="3" height="3" src="025.jpeg" class="art-piece"></a-plane>
+    <a-plane position="25 12.5 -9.5" rotation="0 0 0" width="3" height="3" src="026.jpeg" class="art-piece"></a-plane>
+    <a-plane position="30 12.5 -9.5" rotation="0 0 0" width="3" height="3" src="027.jpeg" class="art-piece"></a-plane>
+    <a-plane position="35 12.5 -9.5" rotation="0 0 0" width="3" height="3" src="028.jpeg" class="art-piece"></a-plane>
+    <a-plane position="40 12.5 -9.5" rotation="0 0 0" width="3" height="3" src="029.jpeg" class="art-piece"></a-plane>
+    <a-plane position="45 12.5 -9.5" rotation="0 0 0" width="3" height="3" src="030.jpeg" class="art-piece"></a-plane>
+
+    <a-plane position="0 17.5 -9.5" rotation="0 0 0" width="3" height="3" src="031.jpeg" class="art-piece"></a-plane>
+    <a-plane position="5 17.5 -9.5" rotation="0 0 0" width="3" height="3" src="032.jpeg" class="art-piece"></a-plane>
+    <a-plane position="10 17.5 -9.5" rotation="0 0 0" width="3" height="3" src="033.jpeg" class="art-piece"></a-plane>
+    <a-plane position="15 17.5 -9.5" rotation="0 0 0" width="3" height="3" src="034.jpeg" class="art-piece"></a-plane>
+    <a-plane position="20 17.5 -9.5" rotation="0 0 0" width="3" height="3" src="035.jpeg" class="art-piece"></a-plane>
+    <a-plane position="25 17.5 -9.5" rotation="0 0 0" width="3" height="3" src="036.jpeg" class="art-piece"></a-plane>
+    <a-plane position="30 17.5 -9.5" rotation="0 0 0" width="3" height="3" src="037.jpeg" class="art-piece"></a-plane>
+    <a-plane position="35 17.5 -9.5" rotation="0 0 0" width="3" height="3" src="038.jpeg" class="art-piece"></a-plane>
+    <a-plane position="40 17.5 -9.5" rotation="0 0 0" width="3" height="3" src="039.jpeg" class="art-piece"></a-plane>
+    <a-plane position="45 17.5 -9.5" rotation="0 0 0" width="3" height="3" src="040.jpeg" class="art-piece"></a-plane>
+
+    <a-plane position="0 22.5 -9.5" rotation="0 0 0" width="3" height="3" src="041.jpeg" class="art-piece"></a-plane>
+    <a-plane position="5 22.5 -9.5" rotation="0 0 0" width="3" height="3" src="042.jpeg" class="art-piece"></a-plane>
+    <a-plane position="10 22.5 -9.5" rotation="0 0 0" width="3" height="3" src="043.jpeg" class="art-piece"></a-plane>
+    <a-plane position="15 22.5 -9.5" rotation="0 0 0" width="3" height="3" src="044.jpeg" class="art-piece"></a-plane>
+    <a-plane position="20 22.5 -9.5" rotation="0 0 0" width="3" height="3" src="045.jpeg" class="art-piece"></a-plane>
+    <a-plane position="25 22.5 -9.5" rotation="0 0 0" width="3" height="3" src="046.jpeg" class="art-piece"></a-plane>
+    <a-plane position="30 22.5 -9.5" rotation="0 0 0" width="3" height="3" src="047.jpeg" class="art-piece"></a-plane>
+    <a-plane position="35 22.5 -9.5" rotation="0 0 0" width="3" height="3" src="048.jpeg" class="art-piece"></a-plane>
+    <a-plane position="40 22.5 -9.5" rotation="0 0 0" width="3" height="3" src="049.jpeg" class="art-piece"></a-plane>
+    <a-plane position="45 22.5 -9.5" rotation="0 0 0" width="3" height="3" src="050.jpeg" class="art-piece"></a-plane>
+
+    <a-plane position="22.5 27.5 -9.5" rotation="0 0 0" width="3" height="3" src="051.jpeg" class="art-piece"></a-plane>
+    
+    <!-- Camera and Controls -->
+    <a-entity position="0 1.6 4">
+      <a-camera>
+        <a-cursor color="#FF0000"></a-cursor>
+      </a-camera>
+    </a-entity>
+  </a-scene>
+</body>
+
 </html>
